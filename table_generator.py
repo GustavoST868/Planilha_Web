@@ -1,7 +1,8 @@
+#used libraries
 import pandas as pd
 import random
 
-# Criar dados fictícios para produtos
+# create fictional products
 produtos = []
 for i in range(1, 501):
     produto = {
@@ -12,10 +13,10 @@ for i in range(1, 501):
     }
     produtos.append(produto)
 
-# Criar DataFrame com os dados
+# creating the dataframe with panda
 df = pd.DataFrame(produtos)
 
-# Salvar DataFrame em um arquivo Excel
+# save the data in an excel sheets
 df.to_excel('static\sheets\_tabela.xlsx', index=False)
 
 print("Arquivo '_tablela.xlsx' criado com sucesso.")
