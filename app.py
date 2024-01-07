@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route('/')
 def index():
     # Ler os dados da planilha Excel
-    excel_file = 'D:\Projetos de Programação\Planilha_Web\static\spreadsheets\produtos.xlsx'  
+    excel_file = 'D:\Projetos de Programação\Planilha_Web\static\sheets\produtos.xlsx'  
     df = pd.read_excel(excel_file)
 
     # Converter os dados para HTML
