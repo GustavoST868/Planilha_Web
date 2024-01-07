@@ -16,6 +16,6 @@ for i in range(1, 501):
 df = pd.DataFrame(produtos)
 
 # Salvar DataFrame em um arquivo Excel
-df.to_excel('produtos.xlsx', index=False)
+df.to_excel('static\sheets\_tabela.xlsx', index=False)
 
-print("Arquivo 'produtos.xlsx' criado com sucesso.")
+print("Arquivo '_tablela.xlsx' criado com sucesso.")

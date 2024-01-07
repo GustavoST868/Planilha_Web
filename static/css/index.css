@@ -1,4 +1,3 @@
-/* index.css */
 
 body {
     font-family: Arial, sans-serif;
@@ -22,7 +21,6 @@ table {
     border-collapse: collapse;
     background-color: #fff;
     box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
-    animation: animation-table 1s;
 }
 
 th, td {
@@ -40,11 +38,3 @@ tr:hover {
     background-color: #97bbff;
 }
 
-@keyframes table-animation {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}

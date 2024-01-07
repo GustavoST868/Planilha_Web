@@ -5,11 +5,11 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    # Ler os dados da planilha Excel
-    excel_file = 'D:\Projetos de Programação\Planilha_Web\static\sheets\produtos.xlsx' 
+    
+    excel_file = 'D:\Projetos de Programação\Planilha_Web\static\sheets\_tabela.xlsx' 
     df = pd.read_excel(excel_file)
 
-    # Converter os dados para HTML
+    
     table_html = df.to_html(classes='table table-bordered', index=False)
 
     return render_template('index.html', table_html=table_html)
