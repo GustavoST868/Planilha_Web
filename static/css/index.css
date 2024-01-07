@@ -1,0 +1,50 @@
+/* index.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #bdb0b0;
+    margin: 0;
+    padding: 0;
+}
+
+div {
+    margin: 20px;
+}
+
+h1{
+    text-align: center;
+    color: #0e5788;
+    
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+    animation: animation-table 1s;
+}
+
+th, td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #000000;
+}
+
+th {
+    background-color: #3498db;
+    color: #fff;
+}
+
+tr:hover {
+    background-color: #97bbff;
+}
+
+@keyframes table-animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

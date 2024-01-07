@@ -9,5 +9,13 @@
     <title>Tabela</title>
 </head>
 <body>
+    <h1>Tabela</h1>
+    <div>
+        {% if table_html %}
+        {{ table_html | safe }}
+        {% else %}
+        <p>Nenhum dado disponivel.</p>
+        {% endif %}
+    </div>
 </body>
 </html>
